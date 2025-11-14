@@ -1,0 +1,9 @@
+¡Rodrigo Sosa, has generado un nuevo personaje con éxito!
+
+Tu personaje se llama 3, y tiene las siguientes caracteristicas:
+ 
+OCUPACION: Fotografo de nubes
+ 
+PLATO PREFERIDO: Pepino hervido
+
+HABILIDAD: Siempre tiene el refrán correcto
