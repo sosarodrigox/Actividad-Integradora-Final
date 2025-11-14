@@ -1,9 +1,7 @@
 ¡Rodrigo Sosa, has generado un nuevo personaje con éxito!
 
-Tu personaje se llama 3, y tiene las siguientes caracteristicas:
- 
-OCUPACION: Fotografo de nubes
- 
-PLATO PREFERIDO: Pepino hervido
+Tu personaje se llama Murruño Lopez, y tiene las siguientes características:
 
-HABILIDAD: Siempre tiene el refrán correcto
+OCUPACIÓN: Liceniatura en casi todo
+PLATO PREFERIDO: Helado de cangrejo
+HABILIDAD: Ve negro en la oscuridad
