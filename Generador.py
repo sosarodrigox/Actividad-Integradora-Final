@@ -1,4 +1,8 @@
-# Video explicativo: https://....VER
+# Video explicativo: https://....
+#
+# NO MAS DE 3 minutos de video, no explicar linea por linea lo que hace el código, sino la lógica general y las decisiones tomadas. Ademas de explicar como generamos el archivo datos_ia.txt (SI usamos GPT ponemos el prompt utilizado). Ambos entregamos el mismo archivo zip con el codigo pytho (y el link video), el archivo datos_ia.txt en el aula virtual. Hay que explicar las funciones que fueron creadas y no estaban pedidas en el enunciado, explicar random para que lo utilizamos...agregar comentarios en el codigo para explicar las decisiones tomadas.
+
+
 # Generador de personajes aleatorios
 # Aula 2 - Grupo 7: MARIN CYNTHIA VANESSA / SOSA RODRIGO FABIAN
 
@@ -112,6 +116,8 @@ ocupacion, comida, habilidad = seleccionar_caracteristica()
 generar_salida()
 
 mostrar_resultados()
+
+input("\nPresione Enter para finalizar...")
 
 
 # Las importaciones se realizan al inicio del código para seguir las mejores prácticas de programación.
