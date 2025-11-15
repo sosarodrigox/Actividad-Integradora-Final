@@ -67,16 +67,30 @@ El programa implementa más de tres funciones:
 Para crear las listas iniciales del archivo `datos_ia.txt`, utilizamos ChatGPT para obtener ideas creativas.  
 Este fue el prompt empleado:
 
-```Genera 3 listas de 10 ítems cada una para usar en un programa de Python que crea personajes aleatorios.
-Las listas deben ser:
+```
+PROMPT UTILIZADO PARA GENERAR EL ARCHIVO datos_ia.txt
 
-Ocupaciones creativas y humorísticas.
+Necesito que me generes contenido para un archivo de texto llamado datos_ia.txt, que voy a usar en un programa de Python.
+El archivo debe contener 3 listas de 10 elementos cada una, todas en español y con un tono humorístico y creativo.
 
-Comidas o platos inventados.
+Las listas deben ser las siguientes:
 
-Habilidades o cualidades especiales originales.
+1) [Lista de ocupaciones]
+   10 ocupaciones inventadas, absurdas o divertidas, escritas en una sola línea cada una.
+   No numerarlas, no usar viñetas, solo el texto plano.
 
-Cada ítem debe ser corto (máximo una línea) y no debe incluir números ni viñetas, solo el texto plano.
-No repitas conceptos.
-El resultado final debe incluir solo 30 líneas de texto, una característica por línea.```
+2) [Lista de comidas]
+   10 comidas inventadas o graciosas, también en una sola línea cada una, sin numeración.
+
+3) [Lista de habilidades]
+   10 habilidades inusuales o fantásticas, escritas en una sola línea cada una.
+
+FORMATO EXACTO:
+- Escribir el título entre corchetes: [Lista de ocupaciones], [Lista de comidas], [Lista de habilidades].
+- Debajo de cada título incluir los 10 ítems, uno por línea.
+- No incluir texto adicional, explicaciones ni espacios en blanco al final.
+
+El resultado final debe tener exactamente 33 líneas: 3 títulos y 30 ítems.
+
+```
 

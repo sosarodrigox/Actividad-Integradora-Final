@@ -1,17 +1,44 @@
 # Video explicativo: https://....
-#
-# NO MAS DE 3 minutos de video, no explicar linea por linea lo que hace el código, sino la lógica general y las decisiones tomadas. Ademas de explicar como generamos el archivo datos_ia.txt (SI usamos GPT ponemos el prompt utilizado). Ambos entregamos el mismo archivo zip con el codigo pytho (y el link video), el archivo datos_ia.txt en el aula virtual. Hay que explicar las funciones que fueron creadas y no estaban pedidas en el enunciado, explicar random para que lo utilizamos...agregar comentarios en el codigo para explicar las decisiones tomadas.
-
 
 # Generador de personajes aleatorios
 # Aula 2 - Grupo 7: MARIN CYNTHIA VANESSA / SOSA RODRIGO FABIAN
 
+# --- SOBRE EL ARCHIVO datos_ia.txt ---
+# El archivo 'datos_ia.txt' contiene una lista de características para generar personajes.
+
+"""
+PROMPT UTILIZADO PARA GENERAR EL ARCHIVO datos_ia.txt
+
+Necesito que me generes contenido para un archivo de texto llamado datos_ia.txt, que voy a usar en un programa de Python.
+El archivo debe contener 3 listas de 10 elementos cada una, todas en español y con un tono humorístico y creativo.
+
+Las listas deben ser las siguientes:
+
+1) [Lista de ocupaciones]
+   10 ocupaciones inventadas, absurdas o divertidas, escritas en una sola línea cada una.
+   No numerarlas, no usar viñetas, solo el texto plano.
+
+2) [Lista de comidas]
+   10 comidas inventadas o graciosas, también en una sola línea cada una, sin numeración.
+
+3) [Lista de habilidades]
+   10 habilidades inusuales o fantásticas, escritas en una sola línea cada una.
+
+FORMATO EXACTO:
+- Escribir el título entre corchetes: [Lista de ocupaciones], [Lista de comidas], [Lista de habilidades].
+- Debajo de cada título incluir los 10 ítems, uno por línea.
+- No incluir texto adicional, explicaciones ni espacios en blanco al final.
+
+El resultado final debe tener exactamente 33 líneas: 3 títulos y 30 ítems.
+"""
+
 from random import randint  # Librería estándar para selección aleatoria
+
 
 # --- DEFINICION DE FUNCIONES ---
 
 
-# Saludo inicial al usuario
+# Función Extra: Saludo inicial al usuario
 def usuario():
     nombre_usuario = input("Ingresa tu Nombre: ")
     apellido_usuario = input("Ingresa tu Apellido: ")
@@ -21,7 +48,7 @@ def usuario():
     return nombre_usuario, apellido_usuario
 
 
-# Selección manual del nombre del personaje
+# Función Extra: Selección manual del nombre del personaje
 def nombre_personaje():
     print(
         "\nEscribe el nombre y apellido de tu personaje o puedes seleccionar uno de la lista:"
@@ -35,7 +62,7 @@ def nombre_personaje():
         "Sinunmango Montero",
     ]
 
-    # Mostrar opciones numeradas
+    # Muestro las opciones numeradas
     for i in range(len(opciones)):
         print(f"{i + 1}. {opciones[i]}")
 
@@ -56,8 +83,9 @@ def nombre_personaje():
     return elegido
 
 
-# Leer características desde archivo externo
+# Función solicitada en la consigna: Una función que lea información desde un archivo
 def leer_caracteristicas():
+
     archivo = open("datos_ia.txt", "r")
     contenido = archivo.readlines()
     archivo.close()
@@ -70,19 +98,24 @@ def leer_caracteristicas():
     return contenido_limpio
 
 
-# Seleccionar características aleatorias
+# Función solicitada en la consigna: Una función que procese los datos leídos y seleccione resultados aleatorios
+"""
+Usamos randint de la librería estándar random para seleccionar al azar una ocupación, comida y habilidad desde el archivo datos_ia.txt.
+"""
+
+
 def seleccionar_caracteristica():
     contenido = leer_caracteristicas()
 
-    # 0-9 ocupaciones, 10-19 comidas, 20-29 habilidades
-    ocupacion = contenido[randint(0, 9)]
-    comida = contenido[randint(10, 19)]
-    habilidad = contenido[randint(20, 29)]
+    # 1-10 ocupaciones, 13-22 comidas, 25-34 habilidades
+    ocupacion = contenido[randint(1, 10)]
+    comida = contenido[randint(13, 22)]
+    habilidad = contenido[randint(25, 34)]
 
     return ocupacion, comida, habilidad
 
 
-# Mostrar resultados por pantalla
+# Función solicitada en la consigna: Una función que muestre información en pantalla
 def mostrar_resultados():
     archivo = open("perfil_personaje.txt", "r")
     contenido = archivo.read()
@@ -90,7 +123,7 @@ def mostrar_resultados():
     archivo.close()
 
 
-# Crear archivo de salida
+# Función solicitada en la consigna: Una función que genere un archivo de salida
 def generar_salida():
     archivo = open("perfil_personaje.txt", "w")
 
@@ -118,8 +151,3 @@ generar_salida()
 mostrar_resultados()
 
 input("\nPresione Enter para finalizar...")
-
-
-# Las importaciones se realizan al inicio del código para seguir las mejores prácticas de programación.
-# las variables y funciones en python se nombran utilizando minúsculas y guiones bajos para mejorar la legibilidad.
-# random es parte de la librería estándar de Python, no es una librería externa. Explicar en el video quee la utilizamos para que la elección sea aleatoria.

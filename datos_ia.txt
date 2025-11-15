@@ -1,30 +1,35 @@
-Liceniatura en casi todo
-Mete Pua
+[Lista de ocupaciones]
+Licenciatura en casi todo
+Mete púa
 Cuenta chismes
 Arbitraje de juegos mentales
 Cuenta hormigas
 Paseador de gusanos
-Ingenieria en tejidos
-Fotografo de nubes
+Ingeniería en tejidos
+Fotógrafo de nubes
 Modelaje de muñecos de nieve
-Supervisor de zocalos
-Helado de cangrejo 
+Supervisor de zócalos
+
+[Lista de comidas]
+Helado de cangrejo
 Cazuela de escarabajos
 Pepino hervido
 Leche de mosca
 Ancas de babosa
-Cabiar con chorizo
-Bife de Langosta
+Caviar con chorizo
+Bife de langosta
 Mojarra a la barbacoa
 Ensalada de vaca
 Polenta con miel
+
+[Lista de habilidades]
 Ve negro en la oscuridad
 Repite todo dos veces
-Puede reirse por media hora
-Recuerda poesias de cuatro versos
+Puede reírse por media hora
+Recuerda poesías de cuatro versos
 Lee la mente de bebés
 Siempre tiene el refrán correcto
 Habla jeringoso
 Habla como el Pato Donald
-Trepa arboles en un día
+Trepa árboles en un día
 Desaparece cuando nadie lo ve
