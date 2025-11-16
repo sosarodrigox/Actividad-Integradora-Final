@@ -1,4 +1,4 @@
-# Video explicativo: https://....
+# Video explicativo: https://www.youtube.com/watch?v=2MD_s1fzrks
 
 # Generador de personajes aleatorios
 # Aula 2 - Grupo 7: MARIN CYNTHIA VANESSA / SOSA RODRIGO FABIAN
@@ -7,29 +7,14 @@
 # El archivo 'datos_ia.txt' contiene una lista de características para generar personajes.
 
 """
-PROMPT UTILIZADO PARA GENERAR EL ARCHIVO datos_ia.txt
+El archivo datos_ia.txt está estructurado de la siguiente manera:
+- Líneas 1-10: Ocupaciones
+- Líneas 11-12: (Líneas en blanco)
+- Líneas 13-22: Comidas preferidas
+- Líneas 23-24: (Líneas en blanco)
+- Líneas 25-34: Habilidades especiales
 
-Necesito que me generes contenido para un archivo de texto llamado datos_ia.txt, que voy a usar en un programa de Python.
-El archivo debe contener 3 listas de 10 elementos cada una, todas en español y con un tono humorístico y creativo.
-
-Las listas deben ser las siguientes:
-
-1) [Lista de ocupaciones]
-   10 ocupaciones inventadas, absurdas o divertidas, escritas en una sola línea cada una.
-   No numerarlas, no usar viñetas, solo el texto plano.
-
-2) [Lista de comidas]
-   10 comidas inventadas o graciosas, también en una sola línea cada una, sin numeración.
-
-3) [Lista de habilidades]
-   10 habilidades inusuales o fantásticas, escritas en una sola línea cada una.
-
-FORMATO EXACTO:
-- Escribir el título entre corchetes: [Lista de ocupaciones], [Lista de comidas], [Lista de habilidades].
-- Debajo de cada título incluir los 10 ítems, uno por línea.
-- No incluir texto adicional, explicaciones ni espacios en blanco al final.
-
-El resultado final debe tener exactamente 33 líneas: 3 títulos y 30 ítems.
+Los datos fueron generación propia utilizando la imaginación para crear un conjunto variado y divertido de características para los personajes.
 """
 
 from random import randint  # Librería estándar para selección aleatoria
